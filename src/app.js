@@ -76,7 +76,8 @@ app.use(expressValidator({
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../dist', 'index.html'))
 })
-const uri = "mongodb+srv://Peter:jesuschrist200%24@cluster0-ykkep.mongodb.net/collections?retryWrites=true&w=majority";
+
+const uri = "mongodb+srv://peter:peter@cluster0-ywdo1.azure.mongodb.net/test23?retryWrites=true&w=majority";
 mongoose.connect(uri, { useNewUrlParser: true });
 
 //Set up default mongoose connection
