@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import blank from '@/components/blank'
 import content from '@/components/content'
 import Admin from '@/components/Admin/index'
 import shop from '@/components/shop'
