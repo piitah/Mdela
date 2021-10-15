@@ -28,27 +28,6 @@
     <nav class="navbar navbar-expand-lg navbar-light" @scroll="updatenavbar"  :class="{ navbarA: scrollPosition > 50, navbarB: scrollPosition < 50}">
       <div class="container">
         <a href="#" class="navbar-brand"><i style="color:orange;">M</i>dela </a>
-        <!-- <div class=" p-2 ml-auto " data-toggle="collapse">
-          <span class="d-flex flex-row ">
-            <div class="p-2 wrap-indicator">
-              <a class="nav-link" href="#"><icon class="cart-size" name="search" scale="1.2"></icon></a>              
-            </div>
-            <div class="p-2 wrap-indicator">
-                <a class="nav-link" href="" @click.prevent="showCart(cartbol)"><icon class="cart-size" name="cart-arrow-down" scale="1.2"></icon></a>
-              <span class="indicator">
-                {{cart.length}}
-              </span>
-            </div>
-            <div class="p-2 wrap-indicator">
-                <a class="nav-link bgclip" href="#">
-              <img src="../../assets/images/icons/icon-heart-01.png" class="img-fluid bgclip mt-2" height="20" width="24" style="background-color:black;" alt="">                
-              </a>
-                <span class="indicator">
-                 2
-                </span>
-            </div>
-          </span>
-        </div> -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -90,7 +69,7 @@
             </li>
             <li class="nav-item wrap-indicator">
               <a class="nav-link bgclip" href="#">
-              <img src="../../assets/images/icons/icon-heart-01.png" class="img-fluid bgclip mt-2" height="20" width="24" style="background-color:black;" alt="">                
+              <!-- <img src="../../assets/images/icons/icon-heart-01.png" class="img-fluid bgclip mt-2" height="20" width="24" style="background-color:black;" alt="">                 -->
               </a>
                 <span class="indicator">
                  2
@@ -131,7 +110,7 @@ export default {
     this.cart = this.$store.state.cart.items;
   },
   destroyed() {
-    window.removeEventListener("scroll", this.updatenavbar);
+    window.removeEventListener("scroll", this.updatenavbar)
   }
 };
 </script>
@@ -163,6 +142,15 @@ export default {
   }
   .toggler-icon::after {
     top: 0.4rem;
+  }
+  .navbarA {
+    padding: 1rem 1rem !important;
+  }
+  .navbarB {
+    padding: 1rem 1rem !important;
+  }
+  .wrapper-contact {
+    display:none;
   }
 }
 .wrapper {

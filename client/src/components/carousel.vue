@@ -4,31 +4,37 @@
       <div class="carousel-inner">
         <div class="carousel-item slide-img1 active">
           &nbsp;
-          <div class="carousel-details col-md-6 col-xs-6 col-sm-5 h-50">
-            <h2 class="cd1">women collection 2018</h2>
-            <h1 class="cd2">new season</h1>
-            <div class=" c-link mt-5">
-              <a href="#" class="carousel-link"> shop now</a>
+          <div class="carousel-details">
+            <div>
+                <h2 class="cd1">women collection 2018</h2>
+                <h1 class="cd2">new season</h1>
+                <div class=" c-link mt-5">
+                  <a href="#" class="carousel-link"> shop now</a>
+                </div>
             </div>
           </div>
         </div>
         <div class="carousel-item slide-img2">
           &nbsp;
           <div class="carousel-details">
-            <h2 class="cd1">women collection 2018</h2>
-            <h1 class="cd2">new season</h1>
-            <div class="c-link mt-5">
-              <a href="#" class="carousel-link"> shop now</a>
+            <div>
+              <h2 class="cd1">women collection 2018</h2>
+              <h1 class="cd2">new season</h1>
+              <div class="c-link mt-5">
+                <a href="#" class="carousel-link"> shop now</a>
+              </div>
             </div>
           </div>
         </div>
         <div class="carousel-item slide-img3">
           &nbsp;
           <div class="carousel-details">
-            <h2 class="cd1">women collection 2018</h2>
-            <h1 class="cd2">new season</h1>
-            <div class="c-link mt-5">
-              <a href="#" class="carousel-link"> shop now</a>
+            <div>
+                <h2 class="cd1">women collection 2018</h2>
+                <h1 class="cd2">new season</h1>
+                <div class="c-link mt-5">
+                  <a href="#" class="carousel-link"> shop now</a>
+                </div>
             </div>
           </div>
         </div>
@@ -59,12 +65,31 @@ export default {
 /* .carousel-item {
   position: relative;
 } */
-.carousel-details {
-  position: absolute;
-  top: 38%;
-  left: 10%;
+@media screen and (max-width : 768px) {
+  .cd1 {
   width: 100%;
+  font-weight: 600;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.7rem !important;
+  }
+  .cd2 {
+    width: 100%;
+    font: bolder;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.5rem !important;
+  }
+  .carousel-details {
+  width: 80% !important;
+}
+}
+.carousel-details {
+  width: 70% ;
+  height:100%;
   opacity: 1;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+   margin:auto;
 }
 .carousel-details:active {
   opacity: 1;

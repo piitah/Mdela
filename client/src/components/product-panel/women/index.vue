@@ -156,7 +156,7 @@
                 <div class="product">
                     <div class="produc">
                         <div class="img-pro">
-                            <img src="../../../assets/images/product-13.jpg" class="img-fluid" alt="">                           
+                            <img src="../../../assets/images/product-10.jpg" class="img-fluid" alt="">                           
                         </div>
                         <div class="quick-preview">
                             <a href="#" @click.prevent="QuickViews" class="preview-link">Quick View</a>

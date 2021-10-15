@@ -7,8 +7,8 @@
             <div class="d-flex flex-row m-2">
               <div class="d-flex flex-column">
                 <img :src="productReview.productImg" height="50" width="100" class="img-fluid border inline" alt="">
-                <img src="../../assets/images/product-min-02.jpg" class="img-fluid mt-4 mb-4" alt="">
-                <img src="../../assets/images/product-min-03.jpg" class="img-fluid" alt="">
+                <!-- <img src="../../assets/images/product-min-02.jpg" class="img-fluid mt-4 mb-4" alt=""> -->
+                <!-- <img src="../../assets/images/product-min-03.jpg" class="img-fluid" alt=""> -->
               </div>
               <div class="center-img">
                 <img :src="productReview.productImg" height="100" width="400" class="img-fluid" alt="">

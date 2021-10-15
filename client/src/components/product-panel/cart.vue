@@ -8,7 +8,7 @@
             </div>
 
             <div v-if="cart.length === 0">
-              <img src="../../assets/images/blog-02.jpg" class="img-fluid" alt="">
+              <!-- <img src="../../assets/images/blog-02.jpg" class="img-fluid" alt=""> -->
             </div>
 
             <div class="d-flex flex-row mt-4 h-75" v-for="item in cart" :key="item._id">

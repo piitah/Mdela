@@ -13,15 +13,25 @@
                             </div>
                         </div>
                         <div class="mt-3">
+                          <div  class="mt-3">
                             <div class="d-flex mt-2">
+                                <div class="w-100 d-flex-column">
+                                    <div class="w-100">{{product.title}}</div>
+                                    <div class="w-100 mt-2">${{product.price}}</div>
+                                </div>
+                                <div class="flex-shrink-1 w-25"><icon name="star"></icon><icon name="star"></icon></div>
+                            </div>
+                        </div> 
+                            <!-- <div class="d-flex mt-2">
                                 <div class="w-100 d-flex-column dim">
                                     <div class="w-100">{{product.title}}</div>
                                     <div class="w-100 mt-2"><strong>$</strong> {{product.price}}</div>
                                 </div>
                                 <div class="flex-shrink-1">
+                                  <icon name="star"></icon><icon name="star"></icon>
                                   <img src="../../../assets/images/icons/icon-heart-01.png" style="cursor:pointer;" class="img-fluid mt-2" height="20" width="24" alt="">                                  
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
