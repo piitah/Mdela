@@ -18,7 +18,7 @@
           &nbsp;
           <div class="carousel-details">
             <div>
-              <h2 class="cd1">women collection 2018</h2>
+              <h2 class="cd1">women collection 2021</h2>
               <h1 class="cd2">new season</h1>
               <div class="c-link mt-5">
                 <a href="#" class="carousel-link"> shop now</a>
