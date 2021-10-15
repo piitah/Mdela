@@ -6,6 +6,7 @@ const mongoose = require('mongoose')
 const session = require('express-session')
 const expressValidator = require('express-validator')
 const path = require('path')
+const dotenv = require("dotenv")
 
 // import routers
 const index = require('../routes/index')
@@ -15,7 +16,9 @@ const Add_page = require('../routes/Add_pages')
 
 // init app
 const app = express()
+dotenv.config()
 
+app.use(express.static(path.join(__dirname, "../dist")))
 var corOptions = {
   origin: '*',
   optionsSuccessStatus: 200
@@ -73,13 +76,18 @@ app.use(expressValidator({
 // });
 
 
+const db = require('../config').mongoURI
+mongoose.connect(db, { useNewUrlParser: true })
+  .then(() => {
+      console.log('mongodb connected')
+  }).
+  catch((err) => {
+      console.log('error connecting to mongodb cluster' + err)
+  })
+
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../dist', 'index.html'))
+    res.sendFile(path.join(__dirname, "../dist", "index.html"))
 })
-
-const uri = "mongodb+srv://peter:peter@cluster0-ywdo1.azure.mongodb.net/test23?retryWrites=true&w=majority";
-mongoose.connect(uri, { useNewUrlParser: true });
-
 //Set up default mongoose connection
 // var mongoDB = 'mongodb://127.0.0.1/Mdela';
 // mongoose.connect(mongoDB);
